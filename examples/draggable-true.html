@@ -4,8 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <style>
-      div {
+      .drag {
         outline: 1px solid orange;
         background-color: rgba(20, 100, 20, 0.8);
         width: 200px;
@@ -13,19 +19,61 @@
     </style>
   </head>
   <body>
-    <div draggable="true">
-      <h1>Nice little block</h1>
-      <p>
-        I'm draggable, drag me if you canvas.
-      </p>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="card" draggable="true" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Draggable</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Drag drag drag</a>
+            <span>drag me!</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm" draggable="true">
+          <h1>Nice little block</h1>
+          <p>
+            I'm draggable, drag me if you canvas.
+          </p>
+        </div>
+        <div class="col-sm">
+          <h2>I'm something else</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+            odio! Iste nam asperiores facere maiores sapiente. Pariatur magni
+            quibusdam modi, aliquid sed, eveniet doloribus, assumenda esse earum
+            inventore itaque ratione.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <h2>I'm something else</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio!
-      Iste nam asperiores facere maiores sapiente. Pariatur magni quibusdam
-      modi, aliquid sed, eveniet doloribus, assumenda esse earum inventore
-      itaque ratione.
-    </p>
   </body>
 </html>
