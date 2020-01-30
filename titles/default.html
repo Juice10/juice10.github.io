@@ -64,7 +64,9 @@
         return vars;
       }
       if ((value = getUrlVars()["value"])) {
-        document.getElementsByClassName("banner")[0].innerText = value;
+        document.getElementsByClassName("banner")[0].innerText = decodeURI(
+          value
+        );
       }
     </script>
   </body>
