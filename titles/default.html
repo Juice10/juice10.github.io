@@ -52,5 +52,20 @@
     <div class="banner">
       Employee view
     </div>
+    <script type="text/javascript">
+      function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(
+          /[?&]+([^=&]+)=([^&]*)/gi,
+          function(m, key, value) {
+            vars[key] = value;
+          }
+        );
+        return vars;
+      }
+      if ((value = getUrlVars()["value"])) {
+        document.getElementsByClassName("banner")[0].innerText = value;
+      }
+    </script>
   </body>
 </html>
